@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CMainHelpDialog</class>
+ <widget class="QDialog" name="CMainHelpDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QPushButton" name="quitPushButton">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>360</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string>border: 2px solid  rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="downToolButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>360</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(54, 54, 54);
+border: 0px solid;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>resource/image/down.png</normaloff>resource/image/down.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="upToolButton">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>360</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(54, 54, 54);
+border: 0px solid;</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>resource/image/up.png</normaloff>resource/image/up.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>48</width>
+     <height>48</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentPageLabel">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>360</y>
+     <width>31</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>1/3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_7">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>100</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 牵引通讯故障或离线</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_5">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 牵引正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_6">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 牵引故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_27">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>180</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 制动正常缓解</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_24">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>140</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 制动正常施加</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_26">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>260</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 制动故障缓解</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_25">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>220</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 制动故障施加</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/TCUOK.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/TCU.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/TCU1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/TCU1.png);
+border-image: url(:/new/prefix1/resource/image/ACU12.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_8">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>140</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 辅助正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/ACU13.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_9">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>180</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 辅助故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/ACU1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_10">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 辅助通讯故障或离线</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/AP.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_11">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>260</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: TW装置正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/ATC1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_12">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>300</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: TW装置故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/SCP1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_13">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>340</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 超级电容正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/SCP2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_14">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>380</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 超级电容故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>10</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/SCP3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_15">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 超级电容通讯故障或离线</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/KM2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_16">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>60</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 接触器闭合</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>90</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/KM1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_17">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>100</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 接触器断开</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>290</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/BCU1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>130</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/BRAKE1.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>170</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/BRAKE2.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>210</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/BRAKE4.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>250</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/new/prefix1/resource/image/BRAKE3.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_28">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>300</y>
+     <width>220</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: 制动通讯故障或离线</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

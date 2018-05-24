@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CNetHelpDialog</class>
+ <widget class="QDialog" name="CNetHelpDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>202</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="Label1_6">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>50</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>:通信故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: rgb(0, 135, 06);
+border: 2px solid  rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_5">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>101</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>:在线</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>50</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:gray;
+border: 2px solid  rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quitPushButton">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>140</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string>border: 2px solid  rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 2px solid  rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_7">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>90</y>
+     <width>381</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>:不在线</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

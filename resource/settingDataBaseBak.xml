@@ -1,0 +1,24 @@
+<SettingDataBase>
+    <LocoNum>0A</LocoNum>
+    <RunningDistance>0</RunningDistance>
+    <Vigilance>45</Vigilance>
+    <VigilanceSpeen>0</VigilanceSpeen>
+    <EngineRunningTimeList CurrentParameter=""/>
+    <Tm1RunningTimeList CurrentParameter=""/>
+    <Tm2RunningTimeList CurrentParameter=""/>
+    <Tm3RunningTimeList CurrentParameter=""/>
+    <Tm4RunningTimeList CurrentParameter=""/>
+    <AuxiliaryGeneratorRunningTimeList CurrentParameter=""/>
+    <Tb1MotorRunningTimeList CurrentParameter=""/>
+    <Tb2MotorRunningTimeList CurrentParameter=""/>
+    <AirCompressorRunningTimeList CurrentParameter=""/>
+    <CoolingFanRunningTimeList CurrentParameter=""/>
+    <CoolingFanInverterRunningTimeList CurrentParameter=""/>
+    <AirCompressorInverterRunningTimeList CurrentParameter=""/>
+    <ChargerRunningTimeList CurrentParameter=""/>
+    <BrakeCabinetRunningTimeList CurrentParameter=""/>
+    <ChopperRunningTimeList CurrentParameter="1">
+        <ChopperCode RunningTime="0">1</ChopperCode>
+        <ChopperCode RunningTime="0">2</ChopperCode>
+    </ChopperRunningTimeList>
+</SettingDataBase>

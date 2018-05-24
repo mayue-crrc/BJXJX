@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CHvacHelpDialog</class>
+ <widget class="QDialog" name="CHvacHelpDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>154</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QLabel" name="Label1_5">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>10</y>
+     <width>221</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: Ok / Working / Not Locked / Not Out</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>50</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:gray;
+border: 2px solid  rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>65</x>
+     <y>10</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string>background-color: rgb(0, 135, 06);
+border: 2px solid  rgb(255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label1_6">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>50</y>
+     <width>221</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string/>
+   </property>
+   <property name="text">
+    <string>: Fault / Stop / Locked / Out</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quitPushButton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>100</y>
+     <width>90</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+   <property name="styleSheet">
+    <string>border: 2px solid  rgb(255, 255, 0);
+
+</string>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
